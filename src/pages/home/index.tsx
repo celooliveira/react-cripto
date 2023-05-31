@@ -18,19 +18,19 @@ export function Home(){
                         <th>Moeda</th>
                         <th>Valor mercado</th>
                         <th>Preço</th>
-                        <th>Volune</th>
+                        <th>Volume</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr className={styles.tr}>
-                        <td className={styles.tdlabel}>
-                            <Link to="/datail'btc">
-                                <span className={styles.link}>Bitcoin</span> | BTC
+                        <td className={styles.tdlabel} data-Label="Moeda">
+                            <Link  className={styles.Link} to="/datail'btc">
+                                <span>Bitcoin</span> | BTC
                             </Link>
                         </td>
-                        <td className={styles.tdlabel}>R$ 1,00</td>
-                        <td className={styles.tdlabel}>R$ 1,00</td>
-                        <td className={styles.tdProfit}> <span>-5.3</span></td>
+                        <td className={styles.tdlabel} data-Label="Mercado">R$ 1,00</td>
+                        <td className={styles.tdlabel} data-Label="Preco">R$ 1,00</td>
+                        <td className={styles.tdProfit} data-Label="Volume"> <span>-5.3</span></td>
                     </tr>
                 </tbody>
             </table>
